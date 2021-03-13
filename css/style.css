@@ -1,0 +1,89 @@
+body{
+  width: 1000px;
+  /* width: 800px; */
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image:url(../japanese-paper_00181.jpg);
+}
+header{
+  height:150px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center; 
+}
+header img{
+  border-radius: 50%;
+  margin-left: 5%;
+
+}
+
+header ul{
+  margin-right: 5%;
+  flex:row space-between;
+}
+header a:hover{
+  background:cornflowerblue;
+}
+p{text-align: center;}
+
+div{
+  display:flex;
+  flex: 1;
+}
+main{
+  flex:1;
+  text-align: center;
+}
+main img{
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px #504f4f;
+}
+nav{
+  width:150px;
+  border:1px solid #777;
+  border-radius:5px;
+  background: hsla(0,0%,100%,0.5);
+  box-shadow: 2px 2px 2px #504f4f;
+} 
+nav h1{
+  font-size:1.2em;
+  font-weight:lighter;
+  text-align: center;
+}
+nav > p{
+  text-align:left;
+  margin:0 auto;
+  padding-left: 2.5em;
+  padding-top:1em;
+}
+
+nav a:hover{
+  background:cornflowerblue;
+}
+aside{
+  width:200px;
+  border:1px solid #777;
+  border-radius:5px;
+  box-shadow: 2px 2px 2px #504f4f;
+  background: hsla(0,0%,100%,0.5);
+}
+footer{
+  height:200px;
+  background: hsla(0,0%,100%,0.5);
+
+}
+@media screen and (max-width: 900px){
+  body,
+  nav,
+  aside{
+    width: 100%;
+  }
+  div{
+    flex-direction:column;
+  }
+  main{
+    order:-1;
+  }
+
