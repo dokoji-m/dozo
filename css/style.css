@@ -7,6 +7,9 @@ body{
   flex-direction: column;
   background-image:url(../japanese-paper_00181.jpg);
 }
+
+/* ----header---- */
+
 header{
   height:150px;
   display:flex;
@@ -18,22 +21,34 @@ header{
 header img{
   border-radius: 50%;
   margin-left: 5%;
-
 }
 
 header ul{
-  margin-right: 5%;
-  flex:row space-between;
+  list-style:none;
+  margin: 0 5% 0 0;
+  padding: 0;
+  display:flex;
+}
+
+header a{
+  width:100px;
+  line-height: 64px;
+  text-align: center;
+  display:block;
 }
 header a:hover{
   background:cornflowerblue;
 }
 p{text-align: center;}
 
-div{
+/* -------nav main aside------- */
+#n-m-a{
   display:flex;
   flex: 1;
 }
+
+/* ----main---- */
+
 main{
   flex:1;
   text-align: center;
@@ -64,6 +79,9 @@ nav > p{
 nav a:hover{
   background:cornflowerblue;
 }
+
+/* ----aside---- */
+
 aside{
   width:200px;
   border:1px solid #777;
@@ -76,6 +94,9 @@ footer{
   background: hsla(0,0%,100%,0.5);
 
 }
+
+/* -----sp----- */
+
 @media screen and (max-width: 900px){
   body,
   nav,
